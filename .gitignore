@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.*
+!.env.example
+auth.json
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+*.bak
+*.tmp
+*.tgz
+coverage/
+.DS_Store
+Thumbs.db
+# Local historical audit with workstation-specific references.
+COMPATIBILITY_REVIEW.md

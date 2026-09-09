@@ -1,0 +1,82 @@
+{
+  "name": "opencode-codex-usage",
+  "version": "0.3.0",
+  "description": "ChatGPT Codex usage and banked resets for OpenCode TUI and Desktop",
+  "type": "module",
+  "bin": {
+    "opencode-codex-usage": "./src/cli.ts"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NameJeff999/opencode-codex-usage.git"
+  },
+  "homepage": "https://github.com/NameJeff999/opencode-codex-usage#readme",
+  "bugs": {
+    "url": "https://github.com/NameJeff999/opencode-codex-usage/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "codex",
+    "usage",
+    "banked-resets",
+    "tui"
+  ],
+  "exports": {
+    ".": "./src/server.ts",
+    "./server": "./src/server.ts",
+    "./tui": "./src/tui.tsx"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "setup": "bun src/cli.ts setup",
+    "doctor": "bun src/cli.ts doctor",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "opencode": ">=1.18.5 <2"
+  },
+  "dependencies": {
+    "jsonc-parser": "3.3.1",
+    "xdg-basedir": "^5.1.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.18.5 <2",
+    "@opentui/core": ">=0.4.5",
+    "@opentui/keymap": ">=0.4.5",
+    "@opentui/solid": ">=0.4.5",
+    "solid-js": ">=1.9.0"
+  },
+  "peerDependenciesMeta": {
+    "@opentui/core": {
+      "optional": true
+    },
+    "@opentui/keymap": {
+      "optional": true
+    },
+    "@opentui/solid": {
+      "optional": true
+    },
+    "solid-js": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "1.18.30",
+    "@opentui/core": "0.4.5",
+    "@opentui/keymap": "0.4.5",
+    "@opentui/solid": "0.4.5",
+    "@types/bun": "1.3.13",
+    "@types/node": "24.12.2",
+    "solid-js": "1.9.10",
+    "typescript": "5.8.2"
+  }
+}
